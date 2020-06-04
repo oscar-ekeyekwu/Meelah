@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark mb-3 p-2">
+      <a href="#" class="navbar navbar-brand mr-auto">Meelah</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link btn btn-secondary" href="backend.html">Backend</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#mealMenu"
+                >Meal Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#orderMeal"
+                >Place Order</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#viewMealOrder"
+                >View Order</a
+              >
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+
+          <div class="tab-content">
+            <!-- Meal Menu Pane -->
+            <div class="tab-pane container  p-2 mt-3" id="mealMenu">
+              <div class="container m-0">
+                <div class="row d-block">
+                  <div class="col-md-4 mb-2">
+                    <form class="form-inline">
+                      <select class="form-control form-control-sm mr-1">
+                        <option>Appetizers</option>
+                        <option>Main</option>
+                        <option>Desserts</option>
+                      </select>
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Search Menu"
+                      />
+                    </form>
+                  </div>
+                  <div class="">
+                    <table class="table table-hover">
+                      <thead class="thead-light">
+                        <tr>
+                          <th>Meal</th>
+                          <th>Type</th>
+                          <th>Price (NGN)</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>John</td>
+                          <td>Doe</td>
+                          <td>john@example.com</td>
+                          <td>
+                            <button class="btn btn-sm m-0 btn-info">
+                              Order
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- place order pane -->
+            <div class="tab-pane container active fade p-2 mt-3" id="orderMeal">
+              <form id="orderMealForm">
+                <div class="form-group">
+                  <label for="customerName">Name</label>
+                  <input class="form-control" type="text" name="customerName" />
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input class="form-control" type="text" name="phoneNumber" />
+                  </div>
+                <div class="form-group">
+                  <label for="mealType">Meal Type</label>
+                  <select class="form-control" id="mealType">
+                    <option>Appetizers</option>
+                    <option>Main</option>
+                    <option>Desserts</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="mealType">Meal</label>
+                  <select class="form-control" id="mealTypeOptions"> </select>
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input lead" type="checkbox" /> Do
+                    you want extra ?
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Order</button>
+              </form>
+            </div>
+
+            <!-- view order -->
+            <div
+              class="tab-pane container fade p-2 mt-3"
+              id="viewMealOrder"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="footer fixed-bottom bg-light text-center p-2 mt-2 font-weight-bold"
+    >
+      Copyright &copy
+      <a href="https://github.com/oscar-ekeyekwu" class="link"
+        >Oscar Ekeyekwu 2020</a
+      >
+    </footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

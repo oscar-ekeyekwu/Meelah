@@ -1,0 +1,14 @@
+{
+  "name": "meelah",
+  "version": "1.0.0",
+  "description": "This app simulates a restaurants process",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }, 
+  "author": "Ekeyekwu Oscar",
+  "license": "ISC",
+  "devDependencies": {
+    "fs": "0.0.1-security"
+  }
+}
