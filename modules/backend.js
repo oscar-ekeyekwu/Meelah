@@ -1,3 +1,6 @@
+import { Meals, Orders, Customers } from './meelah.js';
+console.log(Meals);
+
 const newMealForm = document.querySelector('#newMealForm');
 
 newMealForm.addEventListener('submit', function (e) {
